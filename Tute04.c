@@ -8,6 +8,10 @@ Do not change the code given in the main() function when you are implementing yo
 
 int main() {
    int no1, no2;
+   int minimum(int no1,int  no2);
+   int maximum(int no1,int  no2);
+   int multiply(int no1,int  no2);
+
    printf("Enter a value for no 1 : ");
    scanf("%d", &no1);
    printf("Enter a value for no 2 : ");
@@ -17,3 +21,29 @@ int main() {
    printf("%d ", multiply(no1, no2));
    return 0;
 }
+ int minimum(int no1,int  no2){
+   int result;
+ 
+   if (no1 < no2)
+      result = no1;
+   else
+      result = no2;
+ 
+   return result;
+ }
+int maximum(int no1,int  no2){
+   int result;
+ 
+   if (no1 > no2)
+      result = no1;
+   else
+      result = no2;
+ 
+   return result;
+ }
+ int multiply(int no1,int no2){
+   int result;
+ 
+   result= no1*no2;
+   return result;
+ }
